@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import type { CardData, ColorVar } from './Types';
+import type { LinkCardData, ColorVar } from './Types';
 import Image from 'next/image';
 
-export default function LinkCard(props: CardData) {
+export default function LinkCard(props: LinkCardData) {
   const colorVariants: ColorVar = {
     peach: 'bg-peach-400',
     graphite: 'bg-graphite-400',
@@ -28,7 +28,7 @@ export default function LinkCard(props: CardData) {
               alt={`${props.title} image`}
               className="m-1"
             />
-            <div className="m-1">{props.title}</div>
+            <div className="m-1 font-medium">{props.title}</div>
           </div>
         </button>
       </Link>

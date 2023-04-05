@@ -15,7 +15,7 @@ export default function Navbar() {
           {navList.map((link: any) => (
             <div className="flex-grow bg-peach-400" key={link.title}>
               <Link href={link.href}>
-                <div className="text-center text-graphite-400 ">
+                <div className="text-center font-semibold text-graphite-400 ">
                   <div className="m-1 rounded text-lg hover:backdrop-brightness-75">
                     {link.title}
                   </div>

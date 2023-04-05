@@ -26,7 +26,7 @@ export default function Home({}) {
                 >
                   Danny
                 </div>
-                <div className="text-center">
+                <div className="text-center font-semibold text-graphite-400">
                   Full-Stack Software Engineer. I work with beeps and boops.
                 </div>
               </div>

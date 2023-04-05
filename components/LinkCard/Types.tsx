@@ -3,23 +3,23 @@ import dl from '../../public/dl.png';
 import gh from '../../public/github-mark-white.png';
 import li from '../../public/linkedin-24.png';
 
-export const linkCardData: Array<CardData> = [
+export const linkCardData: Array<LinkCardData> = [
   {
-    title: 'RESUME',
+    title: 'Resume',
     link: 'https://danny-resume.s3.us-west-2.amazonaws.com/DannyHanford.pdf',
     image: dl,
     color: 'beige',
     textColor: 'text-graphite-400',
   },
   {
-    title: 'LINKEDIN',
+    title: 'LinkedIn',
     link: 'https://www.linkedin.com/in/dannyhanford/',
     image: li,
     color: 'seaBlue',
     textColor: 'text-white',
   },
   {
-    title: 'GITHUB',
+    title: 'Github',
     link: 'https://github.com/dannyhannyford',
     image: gh,
     color: 'graphite',
@@ -27,13 +27,13 @@ export const linkCardData: Array<CardData> = [
   },
 ];
 
-export interface CardData {
+export type LinkCardData = {
   title: string;
   link: string;
   image: string | StaticImageData;
   color: string;
   textColor: string;
-}
+};
 
 export type ColorVar = {
   peach: string;

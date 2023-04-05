@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         peach: {
-          400: '#edae99'
+          400: '#ebae97'
         },
         graphite: {
           400: '#484545'
