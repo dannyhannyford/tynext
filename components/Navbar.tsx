@@ -5,7 +5,8 @@ export default function Navbar() {
   const navList: { title: string; href: string }[] = [
     { title: 'Home', href: '/' },
     { title: 'About', href: '/#about' },
-    { title: 'Portfolio', href: '/#portfolio' },
+    // { title: 'Portfolio', href: '/#portfolio' },
+    { title: 'Contact', href: '/#contact' },
   ];
 
   return (

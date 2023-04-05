@@ -6,6 +6,7 @@ import Image from 'next/image';
 import ocean from '../public/oceanBeach.webp';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 const inter = Pacifico({ subsets: ['latin'], weight: '400' });
 
@@ -15,7 +16,7 @@ export default function Home({}) {
       <Head>
         <title>Danny Hanford</title>
       </Head>
-      <div className="h-screen">
+      <div className="mb-96">
         <div className="absolute -z-10">
           <Image src={ocean} priority quality={100} alt="beach" />
         </div>
@@ -34,7 +35,6 @@ export default function Home({}) {
               </div>
             </div>
           </div>
-
           <div className="flex flex-row justify-center">
             {linkCardData.map((data: any) => (
               <LinkCard key={data.title} {...data} />
@@ -44,6 +44,7 @@ export default function Home({}) {
       </div>
       <About />
       <Portfolio />
+      <Contact />
     </>
   );
 }
