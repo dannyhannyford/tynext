@@ -1,0 +1,37 @@
+import React from 'react';
+import Link from 'next/link';
+import type { CardData, ColorVar } from './Types';
+import Image from 'next/image';
+
+export default function LinkCard(props: CardData) {
+  const colorVariants: ColorVar = {
+    peach: 'bg-peach-400',
+    graphite: 'bg-graphite-400',
+    seaBlue: 'bg-seaBlue-400',
+    beige: 'bg-beige-400',
+  };
+
+  return (
+    <>
+      <Link className={`${props.textColor}`} href={props.link}>
+        <button
+          type="button"
+          className={`m-2 rounded-md shadow-md ${
+            colorVariants[props.color as keyof ColorVar]
+          } `}
+        >
+          <div className="m-0.5 flex flex-row rounded-md hover:backdrop-brightness-75">
+            <Image
+              src={props.image}
+              width="24"
+              height="24"
+              alt={`${props.title} image`}
+              className="m-1"
+            />
+            <div className="m-1">{props.title}</div>
+          </div>
+        </button>
+      </Link>
+    </>
+  );
+}

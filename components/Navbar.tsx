@@ -10,12 +10,20 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex flex-row">
-        {navList.map((link: any) => (
-          <div key={link.title}>
-            <Link href={link.href}>{link.title}</Link>
-          </div>
-        ))}
+      <div className="flex-col">
+        <div className="flex flex-grow flex-row drop-shadow-md">
+          {navList.map((link: any) => (
+            <div className="flex-grow bg-peach-400" key={link.title}>
+              <Link href={link.href}>
+                <div className="text-center text-graphite-400 ">
+                  <div className="m-1 rounded text-lg hover:backdrop-brightness-75">
+                    {link.title}
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
