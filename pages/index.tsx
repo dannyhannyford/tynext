@@ -1,17 +1,11 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
+import { Pacifico } from 'next/font/google';
 import { linkCardData } from '@/components/LinkCard/Types';
 import LinkCard from '@/components/LinkCard/LinkCard';
 import Image from 'next/image';
 import ocean from '../public/oceanBeach.webp';
 
-const inter = Inter({ subsets: ['latin'] });
-
-// export async function getStaticProps() {
-//   return {
-//     props: {}, // will be passed to the page component as props
-//   };
-// }
+const inter = Pacifico({ subsets: ['latin'], weight: '400' });
 
 export default function Home({}) {
   return (
@@ -27,9 +21,13 @@ export default function Home({}) {
           <div className="mt-40 flex flex-row justify-center">
             <div className="flex flex-col justify-center rounded-md bg-peach-400 shadow-md">
               <div className="m-4">
-                <div className="text-center">Danny</div>
+                <div
+                  className={`mb-7 text-center text-7xl ${inter.className} text-graphite-400`}
+                >
+                  Danny
+                </div>
                 <div className="text-center">
-                  Full-Stack Software Engineer. I work with beeps and Boops.
+                  Full-Stack Software Engineer. I work with beeps and boops.
                 </div>
               </div>
             </div>
