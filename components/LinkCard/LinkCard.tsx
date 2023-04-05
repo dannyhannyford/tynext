@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import type { LinkCardData, ColorVar } from './Types';
+import type { LinkCardData, ColorVar } from '../Types';
 import Image from 'next/image';
 
 export default function LinkCard(props: LinkCardData) {

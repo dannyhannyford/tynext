@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Pacifico } from 'next/font/google';
-import { linkCardData } from '@/components/LinkCard/Types';
+import { linkCardData } from '@/components/Types';
 import LinkCard from '@/components/LinkCard/LinkCard';
 import Image from 'next/image';
 import ocean from '../public/oceanBeach.webp';

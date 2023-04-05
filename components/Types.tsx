@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
-import dl from '../../public/dl.png';
-import gh from '../../public/github-mark-white.png';
-import li from '../../public/linkedin-24.png';
+import dl from '../public/dl.png';
+import gh from '../public/github-mark-white.png';
+import li from '../public/linkedin-24.png';
 
 export const linkCardData: Array<LinkCardData> = [
   {
