@@ -4,8 +4,8 @@ import Link from 'next/link';
 export default function Navbar() {
   const navList: { title: string; href: string }[] = [
     { title: 'Home', href: '/' },
-    { title: 'About', href: '/about' },
-    { title: 'Portfolio', href: '/portfolio' },
+    { title: 'About', href: '/#about' },
+    { title: 'Portfolio', href: '/#portfolio' },
   ];
 
   return (

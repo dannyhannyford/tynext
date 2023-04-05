@@ -4,6 +4,8 @@ import { linkCardData } from '@/components/Types';
 import LinkCard from '@/components/LinkCard/LinkCard';
 import Image from 'next/image';
 import ocean from '../public/oceanBeach.webp';
+import About from './About';
+import Portfolio from './Portfolio';
 
 const inter = Pacifico({ subsets: ['latin'], weight: '400' });
 
@@ -40,6 +42,8 @@ export default function Home({}) {
           </div>
         </div>
       </div>
+      <About />
+      <Portfolio />
     </>
   );
 }
