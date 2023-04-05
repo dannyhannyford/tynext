@@ -7,12 +7,11 @@ export default function About() {
         <div className="flex flex-col justify-center rounded-md bg-peach-400">
           <div className="m-4 max-w-3xl">
             <div className="mb-4">
-              Hi there! My name is Danny Hanford, and I'm a full stack software
-              engineer with a passion for building robust, scalable backend
-              systems. With two years of experience at Amazon and Vizio, I've
-              worked on a variety of challenging projects, from modernizing
-              Woot’s backend with Apollo GraphQL to mapping TV configurations
-              for Vizio’s large-scale IoT operations.
+              Hi there! My name is Danny Hanford, and I'm a software engineer
+              with a passion for building robust, scalable backend systems. I've
+              worked on a variety of challenging projects at Vizio and Amazon,
+              from mapping TV configurations for Vizio’s large-scale IoT
+              operations to modernizing Woot’s backend with Apollo GraphQL.
             </div>
             <div className="">
               Currently, I'm working towards my AWS Solutions Architect -
