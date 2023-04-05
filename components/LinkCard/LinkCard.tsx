@@ -21,11 +21,11 @@ export default function LinkCard(props: LinkCardData) {
       >
         <button
           type="button"
-          className={`m-2 rounded-md shadow-md ${
+          className={`relative m-2 rounded-md shadow-md ${
             colorVariants[props.color as keyof ColorVar]
           } `}
         >
-          <div className="m-0.5 flex flex-row rounded-md hover:backdrop-brightness-75">
+          <div className="m-0.5 flex flex-row rounded-md">
             <Image
               src={props.image}
               width="24"
@@ -34,6 +34,7 @@ export default function LinkCard(props: LinkCardData) {
               className="m-1"
             />
             <div className="m-1 font-medium">{props.title}</div>
+            <div className="absolute inset-0 rounded-md hover:backdrop-brightness-75"></div>
           </div>
         </button>
       </Link>

@@ -16,35 +16,49 @@ export default function Home({}) {
       <Head>
         <title>Danny Hanford</title>
       </Head>
-      <div className="mb-96">
-        <div className="absolute -z-10">
-          <Image src={ocean} priority quality={100} alt="beach" />
-        </div>
-        <div className="flex flex-col">
-          <div className="mt-40 flex flex-row justify-center">
-            <div className="flex flex-col justify-center rounded-md bg-peach-400 shadow-md">
-              <div className="m-4">
-                <div
-                  className={`mb-7 text-center text-7xl ${inter.className} text-graphite-400`}
-                >
-                  Danny
+      <div className="flex min-h-screen flex-col">
+        <div className="relative flex-1">
+          <Image
+            src={ocean}
+            priority
+            quality={100}
+            alt="beach"
+            fill
+            className="object-cover"
+          />
+          <div
+            id="Top Content"
+            className="absolute top-0 left-0 flex h-full w-full items-center justify-center"
+          >
+            <div className="flex flex-col">
+              <div className="flex flex-row justify-center">
+                <div className="mx-4 flex flex-col justify-center rounded-md bg-peach-400 shadow-md">
+                  <div className="m-4">
+                    <div
+                      className={`mb-7 text-center text-7xl ${inter.className} text-graphite-400`}
+                    >
+                      Danny
+                    </div>
+                    <div className="text-center font-semibold text-graphite-400">
+                      Full-Stack Software Engineer. I work with beeps and boops.
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center font-semibold text-graphite-400">
-                  Full-Stack Software Engineer. I work with beeps and boops.
-                </div>
+              </div>
+              <div className="flex flex-row justify-center">
+                {linkCardData.map((data: any) => (
+                  <LinkCard key={data.title} {...data} />
+                ))}
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-center">
-            {linkCardData.map((data: any) => (
-              <LinkCard key={data.title} {...data} />
-            ))}
-          </div>
         </div>
       </div>
-      <About />
-      <Portfolio />
-      <Contact />
+      <div className="mt-20 flex-1">
+        <About />
+        <Portfolio />
+        <Contact />
+      </div>
     </>
   );
 }

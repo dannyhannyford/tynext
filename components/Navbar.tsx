@@ -11,19 +11,21 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex-col">
-        <div className="flex flex-grow flex-row drop-shadow-md">
-          {navList.map((link: any) => (
-            <div className="flex-grow bg-peach-400" key={link.title}>
-              <Link href={link.href}>
-                <div className="text-center font-semibold text-graphite-400 ">
-                  <div className="m-1 rounded text-lg hover:backdrop-brightness-75">
-                    {link.title}
+      <div id="navigation" className="fixed top-0 z-10 w-full">
+        <div className="flex-col">
+          <div className="flex flex-grow flex-row drop-shadow-md">
+            {navList.map((link: any) => (
+              <div className="flex-grow bg-peach-400" key={link.title}>
+                <Link href={link.href}>
+                  <div className="text-center font-semibold text-graphite-400 ">
+                    <div className="m-1 rounded text-lg hover:backdrop-brightness-75">
+                      {link.title}
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          ))}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
