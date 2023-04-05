@@ -9,7 +9,11 @@ export default function Contact() {
           <div className="m-4 max-w-md">
             <div>Seattle, Washington</div>
             <div>Phone number available upon request</div>
-            <Link href="mailto:dannyhannyford@gmail.com">
+            <Link
+              href="mailto:dannyhannyford@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               dannyhannyford@gmail.com
             </Link>
           </div>

@@ -13,7 +13,12 @@ export default function LinkCard(props: LinkCardData) {
 
   return (
     <>
-      <Link className={`${props.textColor}`} href={props.link}>
+      <Link
+        className={`${props.textColor}`}
+        href={props.link}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <button
           type="button"
           className={`m-2 rounded-md shadow-md ${
