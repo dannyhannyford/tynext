@@ -54,9 +54,13 @@ export default function Home({}) {
           </div>
         </div>
       </div>
-      <div className="mt-20 flex-1">
+      <div className="flex-1">
         <About />
+      </div>
+      <div className="flex-1">
         <Portfolio />
+      </div>
+      <div className="flex-1">
         <Contact />
       </div>
     </>
