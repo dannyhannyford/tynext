@@ -4,8 +4,8 @@ import React from 'react';
 export default function About() {
   return (
     <>
-      <div className="flex flex-col bg-beige-400">
-        <div id="about" className="mx-4 my-32 flex flex-row justify-center ">
+      <div className="flex flex-col">
+        <div id="about" className="mx-4 my-32 flex flex-row justify-center">
           <div className="flex flex-col justify-center rounded-md bg-peach-400">
             <div className="m-4 max-w-3xl">
               <div className="mb-4">

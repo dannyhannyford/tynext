@@ -8,7 +8,7 @@ import mail from '../public/mail.png';
 export default function Contact() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-beige-400">
         <div
           id="contact"
           className="mb-7 mt-12 text-center text-6xl text-graphite-400"
