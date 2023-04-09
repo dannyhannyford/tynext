@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
 import React from 'react';
 import pin from '../public/pin.png';
@@ -39,20 +40,22 @@ export default function Contact() {
                 <div className="mt-1">Phone number available upon request</div>
               </div>
               <div className="flex flex-row">
-                <Image
-                  src={mail}
-                  height="32"
-                  width="32"
-                  alt="mail"
-                  className="mr-2"
-                />
                 <Link
                   href="mailto:dannyhannyford@gmail.com"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="mt-1"
                 >
-                  dannyhannyford@gmail.com
+                  <div className="flex flex-row">
+                    <Image
+                      src={mail}
+                      height="28"
+                      width="28"
+                      alt="mail"
+                      className="ml-0.5 mr-2"
+                    />{' '}
+                    dannyhannyford@gmail.com
+                  </div>
                 </Link>
               </div>
             </div>
